@@ -1,0 +1,85 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <title>Live Inline Update data using X-editable with PHP and Mysql</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/js/bootstrap-editable.js"></script>
+  <link href="bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+  <script src="bootstrap-editable/js/bootstrap-editable.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  
+ </head>
+
+<div class="w3-sidebar w3-bar-block w3-white w3-xxxlarge" style="width:130px">
+  <br><br>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home" style="margin-left:30px"></i></a> 
+<hr>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search" style="margin-left:30px"></i></a> 
+<hr>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope" style="margin-left:30px"></i></a> 
+<hr>  
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe" style="margin-left:30px"></i></a>
+<hr>  
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash" style="margin-left:30px"></i></a> 
+</div>
+
+<div class="w3-top">
+<div class="w3-bar w3-white">
+  <a href="#" class="w3-bar-item w3-button" style="margin-left:500px"></a>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue  w3-round-large w3-hover-red" style="margin-top:40px"><a href="inlineedit.php" >HOME</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="entry.html">COUNTER</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="filter.php">SALE</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="profit.php">REPORTS</a></button>
+</div>
+</div>
+<br><br><br>
+ <body>
+  <div class="container" class="w3-responsive">
+<br><br>
+  
+   <br/>
+  <table  class="w3-table-all w3-centered w3-hoverable w3-card-4" style="margin-left:80px">
+
+<form action="insert.php" method="post" name="insertform">
+
+  <tr>
+<td> ITEM NAME</td>
+<td>  <input type="text" name="name" required placeholder="Enter item name" id="inputid"/></td>
+</tr>
+<tr>
+  <td> PRICE </td>
+<td>  <input type="text" name="purchaseP" required placeholder="Enter Purchase Price" id="inputid"/></td>
+</tr>
+<tr>
+<td> RETAIL </td>
+  <td><input type="text" name="saleP" required placeholder="Enter Retail" id="inputid" /></td>
+</tr>
+<tr>
+  <td> CUSTOMER </td>
+<td><input type="text" value="Cash" name="customer"  required placeholder="Cash/Customer" id="inputid" /></td>
+</tr>
+<tr>
+<td> PAYMENT </td>
+<td><input type="text" name="payment"  required placeholder="Enter Payment" id="inputid" /></td>
+</tr>
+<tr>
+  <td> Enter Date</td>
+  <td><input type="date"  name="date"  required placeholder="Date-Vendor-Bill  " id="inputid" /></td>
+</tr>
+
+<tr>
+  <td><input type="submit" name="send" value="SUBMIT" id="inputid"/></td>
+</tr>
+
+</form>
+
+
+</table>
+ </body>
+</html>
