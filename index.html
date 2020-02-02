@@ -1,35 +1,108 @@
-<!DOCTYPE html>
 <html>
-<head> <link rel="stylesheet" type="text/css" href="w3.css"> </head>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <title>Live Inline Update data using X-editable with PHP and Mysql</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/js/bootstrap-editable.js"></script>
+  <link href="bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+  <script src="bootstrap-editable/js/bootstrap-editable.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  
+ </head>
+
+<div class="w3-sidebar w3-bar-block w3-white w3-xxxlarge" style="width:130px">
+  <br><br>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home" style="margin-left:30px"></i></a> 
+<hr>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search" style="margin-left:30px"></i></a> 
+<hr>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope" style="margin-left:30px"></i></a> 
+<hr>  
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe" style="margin-left:30px"></i></a>
+<hr>  
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash" style="margin-left:30px"></i></a> 
+</div>
+
+<div class="w3-top">
+<div class="w3-bar w3-white">
+  <a href="#" class="w3-bar-item w3-button" style="margin-left:500px"></a>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue  w3-round-large w3-hover-red" style="margin-top:40px"><a href="inlineedit.php" >HOME</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="entry.html">COUNTER</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="filter.php">SALE</a></button>
+  <button class="w3-button w3-card-4 w3-white w3-border w3-border-red w3-text-blue w3-round-large w3-hover-black" style="margin-top:40px"><a href="profit.php">REPORTS</a></button>
+</div>
+</div>
+<br><br><br>
+
 <body>
 
-<div class="w3-bar w3-border w3-card-4 w3-white" style="height:100px" >
-  <a href="#" class="w3-bar-item w3-button" style="margin-left:80px">Home</a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+<div class="w3-container w3-teal">
+  <h1>Summer 2015</h1>
 </div>
 
-<div class="w3-sidebar w3-bar-block w3-white w3-card-4 w3-xxlarge" style="width:120px">
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a> 
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a> 
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a> 
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash"></i></a> 
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>5 Terre</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Monterosso</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Vernazza</h5>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div style="margin-left:150px">
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Manarola</h5>
+      </div>
+    </div>
+  </div>
 
-<div class="w3-container">
-<h2>Sidebar Icons</h2>
-<p>In this example we have used icons in the sidebar.</p>
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Corniglia</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="omer.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Riomaggiore</h5>
+      </div>
+    </div>
+  </div>
 </div>
 
-</div>
-      
 </body>
 </html>
